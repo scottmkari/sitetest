@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/blogheader.css">
+    <link rel="stylesheet" href="css/whatwedo.css">
+
+    <title>Seeds & Feeds - Growing Resilience, Feeding Futures</title>
+
+    <style>
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            padding: 0.5rem;
+            cursor: pointer;
+            z-index: 100;
+            font-size: 20px;
+            /* Set hamburger size to 20px */
+        }
+
+        .mobile-menu-btn .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #3C873A;
+            margin: 5px 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+            transition: all 0.3s ease-in-out;
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #3C873A;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                padding: 2rem;
+                z-index: 90;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links a {
+                color: white;
+                font-size: 1.2rem;
+                text-decoration: none;
+                transition: all 0.2s ease;
+                font-size: 14px;
+            }
+
+            .nav-links a:hover {
+                transform: scale(1.1);
+            }
+
+            /* Hamburger animation */
+            .mobile-menu-btn.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+
+            .mobile-menu-btn.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .mobile-menu-btn.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <img src="img/logo.png" alt="Logo" class="nav-logo1">
+            <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div> <!-- Hamburger Menu Button -->
+            <div class="nav-links" style="font-weight: 600; ">
+                <a href="home.html" >Homepage</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="whatwedo.html"class="active">What We Do</a>
+                <a href="impact.html">Our Impact</a>
+                <a href="getinvolved.html">Get Involved</a>
+                <a href="blog.html">Blog/Resources</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="hero-wrapper">
+            <h1 class="hero-title1" style="color:#3C873A;font-size: 28px;">What We Do</h1>
+            <p style="color:#a5a5a5;font-size: 16px;margin-top: -14px;">Learn what we do </p>
+        </div>
+
+        <div class="blog-grid">
+            <div class="blog-card">
+                <div class="blog-content">
+                    <div class="title-wrapper">
+                        <div class="title-text">
+                            <h2 class="blog-title">Certified Seeds <i class="fa-solid fa-seedling"
+                                    style="float: right;margin-top: -5px;"></i>
+                                <!-- Font Awesome icon for hand receiving money -->
+                            </h2>
+                            <p class="subtext">Delivering high-quality, certified seeds to help farmers maximize yields
+                                and ensure food security.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-content">
+                    <div class="title-wrapper">
+                        <div class="title-text">
+                            <h2 class="blog-title">Renewable Energy <i class="fa fa-bolt"
+                                    style="float: right;margin-top: -5px;"></i>
+                                <!-- Font Awesome icon for hand receiving money -->
+                            </h2>
+                            <p class="subtext">Transforming agriculture with
+                                renewable energy innovations
+                                that reduce costs and
+                                environmental impact.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-content">
+                    <div class="title-wrapper">
+                        <div class="title-text">
+                            <h2 class="blog-title">Women Empowerment <i class="fa fa-female"
+                                    style="float: right;margin-top: -5px;"></i>
+                                <!-- Font Awesome icon for hand receiving money -->
+                            </h2>
+                            <p class="subtext">Building opportunities for women
+                                through the 'contract farmer-led
+                                ' program, fostering
+                                economic independence and
+                                leadership.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-content">
+                    <div class="title-wrapper">
+                        <div class="title-text">
+                            <h2 class="blog-title">Circular Economy <i class="fa-solid fa-chart-bar"
+                                    style="float: right;margin-top: -5px;"></i>
+                                <!-- Font Awesome icon for hand receiving money -->
+                            </h2>
+                            <p class="subtext">Driving sustainability through
+                                creative repurposing of seed by-
+                                products, including transforming
+                                waste into poultry feed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-wrapper">
+            <h1 class="hero-title1" style="color:#3C873A;font-size: 28px; font-size: 22px;color:#A0522D;">Overview of
+                the Contract farmer-led Spokes</h1>
+            <p style="color:#a5a5a5;font-size: 16px;margin-top: -14px;color: #000000;">At the heart of our mission to
+                empower communities is the Contract farmer-led Spokes
+                Initiative—a groundbreaking program designed to uplift and support
+                women in agriculture. </p>
+
+            <p style="color:#a5a5a5;font-size: 16px;margin-top: -14px;color: #000000;">These "mamapreneurs" are
+                entrepreneurial women who serve as key agents of change in their communities. By providing them with
+                access to resources,
+                training, and mentorship, we enable them to lead localized hubs ("spokes") that drive economic growth,
+                improve nutrition, and foster sustainable farming
+                practices. </p>
+        </div>
+
+        <div class="hero-wrapper">
+            <h1 class="hero-title1" style="color:#3C873A;font-size: 28px; font-size: 22px;color:#A0522D;">How It Works
+            </h1>
+        </div>
+
+
+
+        <div class="blog-grid">
+
+            <div class="blog-card" style="align-items: center;">
+                <h2 class="blog-title" style="color: #F4C430;">Certified Seeds
+                </h2>
+                <img src="img/empowerment 1.png" alt="Banner Image" style="width: 78px;width: 70px;">
+
+                <div class="blog-content" style="
+                background: linear-gradient(to bottom, #33cc33, #006600);
+                height: 140px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+                overflow: hidden;">
+
+                    <div class="title-wrapper">
+                        <div class="title-text">
+
+                            <p class="subtext" style="color: #ffffff;">Delivering high-quality, certified seeds to help
+                                farmers maximize yields
+                                and ensure food security.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="blog-card" style="align-items: center;">
+                <h2 class="blog-title" style="color: #F4C430;">Renewable Energy
+                </h2>
+                <img src="img/resource-hub 1.png" alt="Banner Image" style="width: 78px;width: 70px;">
+                <div class="blog-content" style="
+                background: linear-gradient(to bottom, #33cc33, #006600);
+             
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+                overflow: hidden;">
+                    <div class="title-wrapper">
+                        <div class="title-text">
+
+                            <p class="subtext" style="color: #ffffff;">Transforming agriculture with
+                                renewable energy innovations
+                                that reduce costs and
+                                environmental impact.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="blog-card" style="align-items: center;">
+                <h2 class="blog-title" style="color: #F4C430;">Women Empowerment
+                </h2>
+                <img src="img/sociology 1.png" alt="Banner Image" style="width: 78px;width: 70px;">
+                <div class="blog-content" style="
+                background: linear-gradient(to bottom, #33cc33, #006600);
+              
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+                overflow: hidden;">
+                    <div class="title-wrapper">
+                        <div class="title-text">
+
+                            <p class="subtext" style="color: #ffffff;">Building opportunities for women
+                                through the 'contract farmer-led
+                                ' program, fostering
+                                economic independence and
+                                leadership.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="blog-card" style="align-items: center;">
+                <h2 class="blog-title" style="color: #F4C430;">Circular Economy
+                </h2>
+                <img src="img/economic 1.png" alt="Banner Image" style="width: 78px;width: 70px;">
+
+                <div class="blog-content" style="
+                background: linear-gradient(to bottom, #33cc33, #006600);
+                height: 140px;
+
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+                overflow: hidden;">
+                    <div class="title-wrapper">
+                        <div class="title-text">
+
+                            <p class="subtext" style="color: #ffffff;">Driving sustainability through
+                                creative repurposing of seed by-
+                                products, including transforming
+                                waste into poultry feed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <style>
+            .containerwr {
+                width: 300px;
+                /* Adjust as needed */
+                height: auto;
+                /* Let the height adjust based on content */
+                background: linear-gradient(to bottom, #33cc33, #006600);
+                border-radius: 15px;
+                /* Rounded corners */
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+                /* Optional shadow */
+                display: flex;
+                flex-direction: column;
+                /* Stack children vertically */
+                align-items: center;
+                padding: 20px;
+                /* Add padding to the container */
+                overflow: hidden;
+                /* Ensure content stays within the container */
+            }
+
+            /* Image and Header Container */
+            .header-container {
+                text-align: center;
+                /* Center align the image and header */
+                margin-bottom: 20px;
+                /* Space between header and text container */
+            }
+
+            .header-container img {
+                width: 50px;
+                /* Adjust as needed */
+                height: 50px;
+                /* Adjust as needed */
+                margin-bottom: 10px;
+                /* Space between image and header */
+            }
+
+            .blog-titlewr {
+                font-size: 1.5rem;
+                /* Adjust as needed */
+                margin: 0;
+                /* Remove default margin */
+                color: #ffffff;
+                /* Header text color */
+            }
+
+            /* Text Container */
+            .blog-cardwr {
+                width: 100%;
+                /* Ensure the card takes full width */
+            }
+
+            .blog-contentwr {
+                background: rgba(255, 255, 255, 0.9);
+                /* Semi-transparent background for readability */
+                border-radius: 10px;
+                /* Rounded corners */
+                padding: 15px;
+                /* Add padding */
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+                /* Optional shadow */
+            }
+
+            .subtext {
+                font-size: 0.9rem;
+                color: #333;
+                /* Subtext color */
+                margin: 0;
+                /* Remove default margin */
+            }
+        </style>
+    </div>
+
+    <bordertop>
+        <div class="border-line" style="border-top: 5px solid #3C873A; margin: 0 30px;">
+        </div>
+    </bordertop>
+
+    <footer>
+        <div class="footer-content">
+            <img src="img/logo2.png" alt="copyright" style="width: 106.41px; height:100px;margin-left: 20%;">
+            <div style="font-size: 12.5px;">
+                <h3 style="color:#F4C430">Location</h3>
+                <p>Nairobi, Kenya</p>
+                <p>Thika Road, street 102</p>
+            </div>
+            <div style="font-size: 12.5px;">
+                <h3 style="color:#F4C430">Contact Us</h3>
+                <p>+254-727-159-347</p>
+                <p>@seeds & feeds.info.com</p>
+            </div>
+            <div style="font-size: 12.5px;">
+                <h3 style="color:#F4C430">Homepage</h3>
+                <p>About Us</p>
+                <p>What We Do</p>
+            </div>
+            <div style="font-size: 12.5px;">
+                <h3 style="color:#F4C430">Our Impact</h3>
+                <p>Get Involved</p>
+                <p>Blog/Resources</p>
+            </div>
+
+            <div style="font-size: 12.5px;  flex-direction: column; align-items: flex-start; min-width: 150px;">
+                <h3 style="color:#F4C430; margin-bottom: 10px; white-space: nowrap;">Socials</h3>
+
+                <div style="margin: 15px; flex-wrap: nowrap; align-items: flex-start;">
+                    <a href="https://facebook.com" target="_blank"
+                        style="color: #4CAF50; font-size: 20px; margin-right: 10px;">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank"
+                        style="color: #4CAF50; font-size: 20px; margin-right: 10px;">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank"
+                        style="color: #4CAF50; font-size: 20px; margin-right: 10px;">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" style="color: #4CAF50; font-size: 20px;">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div style="height: 50px; width: 100%; background: transparent;"></div>
+        <div class="copyright" style="background-color:#3C873A; width: 100%; display: flex; justify-content: center; 
+            align-items: center; padding: 20px;font-size: 14px;">
+            <p1 style="color: #fff; display: flex; align-items: center; gap: 8px; margin-top: 0;">
+                <img src="img/copyright.png" alt="copyright" style="width: 21px; height: auto;">
+                2025 Seeds & Feeds. All Rights Reserved
+            </p1>
+        </div>
+    </footer>
+
+    <script>
+           function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const menuButton = document.querySelector('.mobile-menu-btn'); // Select the button
+
+            navLinks.classList.toggle('active');
+
+            // Toggle button icon
+            if (navLinks.classList.contains('active')) {
+                menuButton.innerHTML = "✖"; // Change to cancel icon
+            } else {
+                menuButton.innerHTML = "☰"; // Change back to hamburger icon
+            }
+        }
+    </script>
+</body>
+
+</html>

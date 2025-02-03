@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/blogheader.css">
+    <link rel="stylesheet" href="css/download.css">
+
+
+    <title>Seeds & Feeds - Growing Resilience, Feeding Futures</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <img src="img/logo.png" alt="Logo" class="nav-logo1">
+            <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div> <!-- Hamburger Menu Button -->
+            <div class="nav-links" style="font-weight: 600; ">
+                <a href="home.html" >Homepage</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="whatwedo.html">What We Do</a>
+                <a href="impact.html">Our Impact</a>
+                <a href="getinvolved.html">Get Involved</a>
+                <a href="blog.html"class="active">Blog/Resources</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="hero-wrapper">
+            <h1 class="hero-title1" style="color:#3C873A;font-size: 28px;margin-top: 40px;">Blog & Resources</h1>
+            <p style="color:#a5a5a5;font-size: 16px;margin-top: -20px; ">Get more news about us and our activities</p>
+        </div>
+    </div>
+
+    <div class="banner-container">
+        <div class="banner-image">
+            <div class="social-icons" style="color:#fff ;">
+                <!-- Social Media Icons -->
+                <a href="https://twitter.com" target="_blank" class="social-icon"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://facebook.com" target="_blank" class="social-icon"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon"><i
+                        class="fa-brands fa-linkedin"></i></a>
+
+            </div>
+
+            <div class="date">Monday, 20th Jan 2025</div>
+
+            <div class="content">
+                <div class="content-wrapper">
+                    <div class="title">Sustainable farming practices</div>
+                    <div class="author">
+                        <div class="author-image"></div>
+                        <div class="author-info">
+                            <div class="author-name">Henry Blixen</div>
+                            <div class="author-title">Blogger, Life coach and passionate farmer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <style>
+                .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            padding: 0.5rem;
+            cursor: pointer;
+            z-index: 100;
+            font-size: 20px;
+            /* Set hamburger size to 20px */
+        }
+
+        .mobile-menu-btn .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #3C873A;
+            margin: 5px 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+            transition: all 0.3s ease-in-out;
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #3C873A;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                padding: 2rem;
+                z-index: 90;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links a {
+                color: white;
+                font-size: 1.2rem;
+                text-decoration: none;
+                transition: all 0.2s ease;
+                font-size: 14px;
+            }
+
+            .nav-links a:hover {
+                transform: scale(1.1);
+            }
+
+            /* Hamburger animation */
+            .mobile-menu-btn.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+
+            .mobile-menu-btn.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .mobile-menu-btn.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+    
+        .page-title {
+            text-align: center;
+            padding: 2rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        .page-title h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin: 0;
+        }
+
+        .banner-container {
+            padding: 2.99rem;
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        .banner-image {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/bann.jpg');
+            /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            border-radius: 15px;
+        }
+
+        .social-icons {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            gap: 15px;
+            color: #fff;
+        }
+
+        .social-icon {
+            width: 24px;
+            height: 24px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+
+        .date {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 14px;
+        }
+
+        .content {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            color: white;
+        }
+
+        .content-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            flex: 1;
+        }
+
+        .author {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            min-width: max-content;
+        }
+
+        .author-image {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+            flex-shrink: 0;
+            background-image: url('img/OIP4.jpg');
+            /* Replace with your image path */
+            background-size: cover;
+            /* Ensures the image fully covers the circle */
+            background-position: center;
+            /* Centers the image */
+            background-repeat: no-repeat;
+            /* Prevents repetition */
+            outline: #fff;
+            outline-style: solid;
+
+        }
+
+        .author-info {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+
+        .author-name {
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .author-title {
+            font-size: 14px;
+            opacity: 0.9;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 768px) {
+            .page-title h1 {
+                font-size: 2rem;
+            }
+
+            .banner-container {
+                height: 350px;
+            }
+
+            .social-icons {
+                top: 20px;
+                left: 10px;
+                margin-top: 10px;
+            }
+
+            .date {
+                top: 20px;
+                right: 10px;
+                margin-top: 10px;
+            }
+
+            .content-wrapper {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .title {
+                font-size: 16px;
+            }
+
+            .author {
+                width: 100%;
+            }
+
+            .content {
+                bottom: 10px;
+                left: 10px;
+                right: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-title h1 {
+                font-size: 1.5rem;
+            }
+
+            /* blog banner height */
+            .banner-container {
+                height: 250px;
+            }
+
+            .title {
+                font-size: 20px;
+            }
+
+            .author-title {
+                font-size: 12px;
+            }
+
+            .social-icons {
+                margin-top: 10px;
+            }
+
+            .date {
+                margin-top: 10px;
+            }
+        }
+    </style>
+
+
+    <div class="container">
+    
+
+        <div class="filter-bar">
+            <a href="blog.html">All</a>
+            <a href="#">Success updates from SEEDS & FEEDS</a>
+            <a href="blog.html" class="active">Downloads</a>
+            <div class="search-bar" >
+                <input type="text" placeholder="Search blog...">
+            </div>
+        <style>
+
+        </style>
+
+        </div>
+
+
+
+        <div class="blog-grid">
+
+
+
+
+
+            <div class="blog-card">
+
+                <div class="blog-content">
+                    <div class="content-header">
+                        <img src="img/pdf.jpg" alt="PDF Icon" class="pdf-icon">
+                        <h1 style="font-size: 14px; font-weight: 400;color: #8b8b8b;" class="blog-title">Impact reports
+                            <i style="margin-left: 145px;" class="fas fa-download"></i></h1>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="blog-card">
+
+                <div class="blog-content">
+                    <div class="content-header">
+                        <img src="img/pdf.jpg" alt="PDF Icon" class="pdf-icon">
+                        <h1 style="font-size: 14px; font-weight: 400;color: #8b8b8b;" class="blog-title">infographics <i
+                                style="margin-left: 160px;" class="fas fa-download"></i></h1>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="blog-card">
+
+                <div class="blog-content">
+                    <div class="content-header">
+                        <img src="img/pdf.jpg" alt="PDF Icon" class="pdf-icon">
+                        <h1 style="font-size: 14px; font-weight: 400;color: #8b8b8b;" class="blog-title">Brochures <i
+                                style="margin-left: 180px;" class="fas fa-download"></i></h1>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <bordertop>
+        <div class="border-line" style="border-top: 5px solid #3C873A; margin: 0 30px;">
+        </div>
+    </bordertop>
+
+    <footer>
+        <div class="footer-content">
+            <img src="img/logo2.png" alt="copyright" style="width: 106.41px; height:100px;margin-left: 20%;">
+            <div style="font-size: 12.5px;">
+                <h3 style="color:#F4C430">Location</h3>
+                <p>Nairobi, Kenya</p>
+                <p>Thika Road, street 102</p>
+            </div>
+            <div style="font-size: 12.5px;">
+                <h3 style="color:#F4C430">Contact Us</h3>
+                <p>+254-727-159-347</p>
+                <p>@seeds & feeds.info.com</p>
+            </div>
+            <div style="font-size: 12.5px;">
+                <h3 style="color:#F4C430">Homepage</h3>
+                <p>About Us</p>
+                <p>What We Do</p>
+            </div>
+            <div style="font-size: 12.5px;">
+                <h3 style="color:#F4C430">Our Impact</h3>
+                <p>Get Involved</p>
+                <p>Blog/Resources</p>
+            </div>
+
+
+            <div
+                style="font-size: 12.5px; display: flex; flex-direction: column; align-items: flex-start; min-width: 150px;">
+                <h3 style="color:#F4C430; margin-bottom: 10px; white-space: nowrap;">Socials</h3>
+                <div style="display: flex; gap: 10px; flex-wrap: nowrap;">
+                    <a href="#" target="_blank" style="color: #4CAF50; font-size: 20px;">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" target="_blank" style="color: #4CAF50; font-size: 20px;">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" target="_blank" style="color: #4CAF50; font-size: 20px;">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" style="color: #4CAF50; font-size: 20px;">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div style="height: 50px; width: 100%; background: transparent;"></div>
+        <div class="copyright" style="background-color:#3C873A; width: 100%; display: flex; justify-content: center; 
+            align-items: center; padding: 20px;font-size: 14px;">
+            <p1 style="color: #fff; display: flex; align-items: center; gap: 8px; margin-top: 0;">
+                <img src="img/copyright.png" alt="copyright" style="width: 21px; height: auto;">
+                2025 Seeds & Feeds. All Rights Reserved
+            </p1>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const menuButton = document.querySelector('.mobile-menu-btn'); // Select the button
+
+            navLinks.classList.toggle('active');
+
+            // Toggle button icon
+            if (navLinks.classList.contains('active')) {
+                menuButton.innerHTML = "✖"; // Change to cancel icon
+            } else {
+                menuButton.innerHTML = "☰"; // Change back to hamburger icon
+            }
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-wrapper') && !e.target.closest('.mobile-menu-btn')) {
+                navLinks.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+
+</html>

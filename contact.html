@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+
+    <title>Seeds & Feeds - Growing Resilience, Feeding Futures</title>
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <img src="img/logo.png" alt="Logo" class="nav-logo">
+            <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div> <!-- Hamburger Menu Button -->
+            <div class="nav-links" style="font-weight: 600; ">
+                <a href="home.html" >Homepage</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="whatwedo.html">What We Do</a>
+                <a href="impact.html">Our Impact</a>
+                <a href="getinvolved.html">Get Involved</a>
+                <a href="blog.html">Blog/Resources</a>
+                <a href="contact.html"class="active">Contact Us</a>
+            </div>
+        </div>
+        <style>
+              .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        </style>
+    </nav>
+
+
+
+
+    <div class="main-content">
+        <div class="image-container">
+            <img src="img2/IMG20240928170918.jpg" alt="Crops in field">
+        </div>
+    
+        <div class="form-container">
+            <h1 style="color:#F4C430">Contact Us</h1>
+            <p>Enable communication and engagement.</p>
+    
+            <form action="php/contact.php" method="POST">
+                
+                <div class="row">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <input type="text" name="office_details" placeholder="Office Details">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="address" placeholder="Address of HQ and hubs">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Message" required></textarea>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                    <label for="newsletter" style="color:#808080;font-size: 14px;">Newsletter Subscription</label>
+                </div>
+                <button type="submit">Send ➤</button>
+            </form>
+        </div>
+        <style>
+
+            .row {
+                display: flex; /* Use Flexbox to align children side by side */
+                gap: 1rem; /* Add space between the two inputs */
+            }
+            
+            .form-group {
+                flex: 1; /* Allow each form group to take equal space */
+                margin-bottom: 1rem; /* Maintain spacing below the row */
+            }
+            
+            input {
+                width: 100%; /* Ensure inputs take full width of their container */
+                padding: 0.8rem;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+            }
+            </style>
+    </div>
+    
+
+
+    <!-- <div class="main-content">
+        <div class="image-container">
+            <img src="img/farm.jpg" alt="Crops in field">
+        </div>
+
+        <div class="form-container">
+            <h1>Contact Us</h1>
+            <p>Enable communication and engagement.</p>
+
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Message"></textarea>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter">
+                    <label for="newsletter">Newsletter Subscription</label>
+                </div>
+                <button type="submit">Send ➤</button>
+            </form>
+        </div>
+    </div> -->
+
+
+    <bordertop>
+        <div class="border-line" style="border-top: 5px solid #3C873A; margin: 0 30px;">
+        </div>
+    </bordertop>
+
+    <footer>
+        <div class="footer-content">
+            <img src="img/logo2.png" alt="copyright" style="width: 106.41px; height:100px;margin-left: 20%;">
+
+
+            <div style="font-size: 12.5px; font-weight: 600;">
+                <h3 style="color:#F4C430">Location</h3>
+                <p>Nairobi, Kenya</p>
+                <p>Thika Road, street 102</p>
+            </div>
+            <div style="font-size: 12.5px;">
+                <h3 style="color:#F4C430">Contact Us</h3>
+                <p>+254-727-159-347</p>
+                <p>@seeds & feeds.info.com</p>
+            </div>
+            <div style="font-size: 12.5px;">
+                <h3 style="color:#F4C430">Homepage</h3>
+                <p>About Us</p>
+                <p>What We Do</p>
+            </div>
+
+            <div style="font-size: 12.5px;">
+                <h3 style="color:#F4C430">Our Impact</h3>
+                <p>Get Involved</p>
+                <p>Blog/Resources</p>
+            </div>
+            <div style="font-size: 12.5px;  flex-direction: column; align-items: flex-start; min-width: 150px;">
+                <h3 style="color:#F4C430; margin-bottom: 10px; white-space: nowrap;">Socials</h3>
+
+                <div style="margin: 15px; flex-wrap: nowrap; align-items: flex-start;">
+                    <a href="https://facebook.com" target="_blank"
+                        style="color: #4CAF50; font-size: 20px; margin-right: 10px;">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank"
+                        style="color: #4CAF50; font-size: 20px; margin-right: 10px;">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank"
+                        style="color: #4CAF50; font-size: 20px; margin-right: 10px;">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" style="color: #4CAF50; font-size: 20px;">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div style="height: 50px; width: 100%; background: transparent;"></div>
+        <div class="copyright" style="background-color:#3C873A; width: 100%; display: flex; justify-content: center; 
+            align-items: center; padding: 20px;font-size: 14px;">
+            <p1 style="color: #fff; display: flex; align-items: center; gap: 8px; margin-top: 0;">
+                <img src="img/copyright.png" alt="copyright" style="width: 21px; height: auto;">
+                2025 Seeds & Feeds. All Rights Reserved
+            </p1>
+        </div>
+
+    </footer>
+
+    <script>
+            function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const menuButton = document.querySelector('.mobile-menu-btn'); // Select the button
+
+            navLinks.classList.toggle('active');
+
+            // Toggle button icon
+            if (navLinks.classList.contains('active')) {
+                menuButton.innerHTML = "✖"; // Change to cancel icon
+            } else {
+                menuButton.innerHTML = "☰"; // Change back to hamburger icon
+            }
+        }
+    </script>
+
+    <style>
+
+
+
+
+
+    </style>
+    
+
+</body>
+
+</html>
