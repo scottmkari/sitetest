@@ -1,0 +1,70 @@
+/* Navigation Styles */
+.navbar {
+    background-color: #2E7D32;
+    padding: 1rem;
+    color: white;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.nav-logo1 {
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+
+
+
+
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    background-color: #2E7D32;
+}
+
+.nav-links a {
+  
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+    font-size: 14px;
+    padding: 0.5rem;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+.nav-links a.active {
+    border-bottom: 2px solid white;
+    display: flex;
+
+}
+/* Ensure the menu toggle button is clickable and visible */
+.menu-toggle {
+    display: block;
+    z-index: 1001; /* Ensure it stays above the nav-links */
+    position: relative;
+}
+

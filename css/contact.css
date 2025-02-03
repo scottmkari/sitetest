@@ -1,0 +1,426 @@
+        /* Reset and base styles */
+        * {
+
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            /* Primary font */
+        }
+
+
+        html,
+        body {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
+            margin: 0;
+            overflow-x: hidden;
+            line-height: 1.6;
+
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        main {
+            /* margin: 0.5rem 0; */
+            /* Adds margin only to the main content */
+            padding: 2rem;
+            margin-top: -30px;
+            /* Optional: Ensures spacing inside main */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+
+
+
+ /* Navigation */
+ nav {
+    background-color: #2f7c31;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.nav-logo {
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+    font-size: 14px;
+    padding: 0.5rem;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+.nav-links a.active {
+    border-bottom: 2px solid white;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+/*contact form*/
+
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding: 4rem 1rem 6rem 1rem; /* Adjust padding for smaller screens */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-container {
+    flex: 1 1 45%; /* Take 45% of the width on larger screens */
+    max-width: 45%; /* Ensure it doesn't exceed 45% of the container width */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+.form-container {
+    flex: 1 1 45%; /* Take 45% of the width on larger screens */
+    max-width: 45%; /* Ensure it doesn't exceed 45% of the container width */
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.form-container h1 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.form-container p {
+    color: #666;
+    margin-bottom: 0.5rem;
+    margin-top: -0.5rem;
+    font-size: 14px;
+
+}
+
+.form-group {
+    margin-bottom: 0.7rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    /* margin-bottom: 1rem; */
+}
+
+textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: -0.5rem;
+
+}
+
+.checkbox-group input {
+    width: auto;
+    margin: 0;
+}
+
+button {
+    width: 40%;
+    height: 50px;
+    padding: 0.5rem;
+    background-color: #F4C430;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    float:right;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .image-container,
+    .form-container {
+        flex: 1 1 100%; /* Take full width on smaller screens */
+        max-width: 100%; /* Ensure full width on smaller screens */
+    }
+
+    .main-content {
+        padding: 2rem 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .form-container {
+        padding: 1rem;
+    }
+
+    .form-container h1 {
+        font-size: 1.8em;
+    }
+
+    .form-container p {
+        font-size: 1em;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9em;
+        padding: 0.8rem;
+    }
+
+    button {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        padding: 1rem; /* Further adjust padding for very small screens */
+    }
+
+    .form-container {
+        padding: 0.5rem;
+    }
+
+    .form-container h1 {
+        font-size: 1.6em;
+    }
+
+    .form-container p {
+        font-size: 0.9em;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.85em;
+        padding: 0.7rem;
+    }
+
+    button {
+        font-size: 0.95em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*contact form*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    padding: 1rem 0rem 0rem;
+    height: 200px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0rem;
+    padding: 0rem rem;
+    justify-content: center;
+    /* Centers the grid items */
+    text-align: center;
+    /* Centers the text inside the grid items */
+}
+
+.footer-content h3 {
+    color: #2f7c31;
+    margin-bottom: 1rem;
+}
+
+.footer-content p {
+    margin-bottom: 0.5rem;
+    color: #000000;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+
+
+@media screen and (max-width: 768px) {
+    .hero-content {
+        align-items: center;
+        /* Keeps alignment consistent */
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        /* Stacks buttons on smaller screens */
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #2f7c31;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero-images {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        padding: 2rem 1rem;
+    }
+
+    .impact,
+    .testimonials {
+        padding: 2rem 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 0.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .nav-wrapper {
+        padding: 0 0.5rem;
+    }
+
+    .footer-content {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .testimonial-profile {
+        flex-direction: column;
+        text-align: center;
+    }
+}
